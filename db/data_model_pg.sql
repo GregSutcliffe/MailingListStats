@@ -18,7 +18,7 @@ CREATE TABLE compressed_files (
     );
 
 CREATE TABLE people (
-    email_address VARCHAR(255) NOT NULL, 
+    email_address VARCHAR(255) NOT NULL,
     name VARCHAR(255),
     username VARCHAR(255),
     domain_name VARCHAR(255),
@@ -34,7 +34,7 @@ CREATE TABLE messages (
     first_date_tz NUMERIC(11),
     arrival_date TIMESTAMP,
     arrival_date_tz NUMERIC(11),
-    subject VARCHAR(255),
+    subject VARCHAR(511),
     message_body TEXT,
     is_response_of VARCHAR(255),
     mail_path TEXT,
